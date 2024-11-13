@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>login</h1>
+     { %if mesagem %}
+    ><p>{{login falhou}}
+
+    </p>
+    {% endif %}
+    
+    <form action="/login" method="post">
+        <label for="">E-mail:</label><br>
+        <input type="text" name="email"><br><br>
+        <label for="">senha:</label><br>
+        <input type="text" name="senha"><br><br>
+        <input type="password" name="senha"><br><br>
+        
+        <button type="submit">Entrar</button>
+    </form>
+</body>
+</html>

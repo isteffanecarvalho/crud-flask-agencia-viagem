@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1></h1>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Data de nascimento</th>
+                <th>Endereço</th>
+                <th>Telefone</th>
+                <th>CPF</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Começo da repetição e exibição dos passageiros -->
+            {% for passageiro in passageiros %}
+                <tr>
+                    <td>{{ passageiro.id }}</td>
+                    <td>{{ passageiro.nome}}</td>
+                    <td>{{ passageiro.dataNascimento}}</td>
+                    <td>{{ passageiro.endereco }}</td>
+                    <td>>{{ passageiro.telefone}}</td>
+                    <td>{{ passageiro.cpf}}</td>
+                    <td>
+                        <a href="/editar/{{ passageiro.id}}">Editar</a>
+                        <a href="/excluir{{ passageiro}}">Excluir</a> <!-- Tornar o id do passageiro dinâmico -->
+                    </td>
+                </tr>
+            <!-- Fim da repetição e exibição dos passageiros -->
+            {% endfor %}    
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,20 @@
+1) Executar a instalação dos pacotes pip install flask mysql-connector-python
+Flask e mysql-connector-python
+- comando no Terminal:
+
+2) Criar os arquivos a seguir e colocar os códigos
+que estão na Sala de Aula:
+- app.py
+- index.html
+- criar.html
+- listar.html
+- editar.html
+
+3) Executar a aplicação no Terminal
+- comando 1: python app.py
+- comando 2: flask run (esse comando não permite a reinicialização automática do servidor)
+
+4) Criar uma pasta na pasta raiz
+do projeto chamada "templates"
+e mover todos os arquivos em HTML
+para dentro dela
